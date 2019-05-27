@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../assets/styles/debug.css';
 import '../assets/styles/style.sass';
 import '../assets/styles/style.css';
 
@@ -6,36 +7,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <body>
-          <h1 class="title">
-            Bulma
-          </h1>
-
-          <p class="subtitle">
-            Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-          </p>
-
-          <div class="field">
-            <div class="control">
-              <input class="input" type="text" placeholder="Input" />
-            </div>
-          </div>
-
-          <div class="field">
-            <p class="control">
-              <span class="select">
-                <select>
-                  <option>Select dropdown</option>
-                </select>
-              </span>
+        <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
             </p>
           </div>
-
-          <div class="buttons">
-            <a class="button is-primary">Primary</a>
-            <a class="button is-link">Link</a>
-          </div>
-        </body>
+        </footer>
       </div>
     );
   }
